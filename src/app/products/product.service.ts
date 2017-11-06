@@ -9,7 +9,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 
 @Injectable()
 export class ProductService{
-private _productUrl = './api/products/products.json';
+private _productUrl = 'https://raw.githubusercontent.com/achyutdev/angularApp/master/src/api/products/products.json';
  constructor(private _http:HttpClient){
  }
  getProducts(): Observable<IProduct[]>{
